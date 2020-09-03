@@ -188,6 +188,15 @@ h1, h2, h3 {
   background: #A8DCDB
 }
 
+body {
+  color: black;
+  background-color: white;
+}
+
 #button ul li a {
   display: block;
+}
+
+a {
+  text-decoration: none;
 }
