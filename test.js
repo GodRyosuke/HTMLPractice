@@ -22,3 +22,5 @@ $('.accordion a').click(function() {
     return false;
 });
 });
+
+$('#slide ul').prepand($('#slide li:last-child'));
