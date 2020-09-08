@@ -22,3 +22,22 @@ $('.accordion a').click(function() {
     return false;
 });
 });
+
+$('#slide ul').prepend($('#slide li:last-child'));
+$('#slide ul').css('left', 'calc(-100vw + 30px)');
+var dir = -1;
+// スクロールのインターバル時間
+var interval = 3000;
+// スクロールのスピード
+var duration = 700;
+var timer;
+timer = setInterval(slideTimer, interval);
+function slideTimer() {
+    $('#slide ul').animate({'left':'-=calc(100vw - 30px)'}, duration,
+    function() {
+        $(this).append($('#slide li:first-child'));
+        $(this).css('left', 'calc(100vw - 30px)');
+    });
+}
+
+
