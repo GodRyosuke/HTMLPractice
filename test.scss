@@ -1,0 +1,119 @@
+
+body {
+    header {
+        margin: 0;
+        .headerCon {
+            max-width: 970px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+    }
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+@mixin containerBasic{
+    max-width: 1030px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+// Accordion box
+.site-content {
+    .container {
+        @include containerBasic;
+        
+        .accordion {
+            padding: 20px 0;
+            dl {
+                display: flex;
+                margin: 0;
+                dt {
+
+                }
+                dd {
+                    display: none;
+                    margin: 0;
+                }
+                .current {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// Slider
+.site-content {
+    .container {
+        @include containerBasic;
+        span {
+            text-align: center;
+        }
+        .Slider {
+            #slide {
+                position: relative;
+                overflow: hidden;
+                .ulBuff {
+                    width: 100%;
+                    padding-bottom: 53.123%;
+                }
+                ul {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    width: 100%;
+                    li {
+                        flex: 0 0 auto;
+                        width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            #button {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px 0;
+                    li {
+                        margin-left: 5px;
+                        a {
+                            text-indent: -9999px;
+                            text-decoration: none;
+                            display: block;
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 7px;
+                            background-color: blue;
+                        }
+                        .target {
+                            background-color: blueviolet;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
