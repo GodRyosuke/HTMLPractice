@@ -9,6 +9,12 @@ body header {
   margin: 0;
 }
 
+body header box {
+  width: 100px;
+  height: 100px;
+  background-color: var(--info);
+}
+
 body header .headerCon {
   max-width: 970px;
   padding: 0 15px;
@@ -58,6 +64,13 @@ ul {
 
 .site-content .container .accordion dl .current {
   display: block;
+}
+
+.header .box {
+  width: 100px;
+  height: 100px;
+  background-color: var(--info);
+  position: fixed;
 }
 
 .site-content .container {

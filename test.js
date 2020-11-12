@@ -1,3 +1,13 @@
+const box = document.querySelector('.header .box');
+// setInterval((event) => {
+//     box.style.left = `${event.clientX - 100}px`;
+//     box.style.top = `${event.clientY - 100}px`;
+// }, 500);
+window.addEventListener("mousemove", event => {
+    box.style.left = `${event.clientX - 100}px`;
+    box.style.top = `${event.clientY - 100}px`;
+});
+
 $(function() {
 $(".toggleButton").click(function() {
     $(".toggleMenu").slideToggle();
